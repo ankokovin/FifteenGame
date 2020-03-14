@@ -1,0 +1,21 @@
+#tree{
+    width: 100%;
+}
+
+#main-container{
+    display: grid;
+    grid-template: "left right"
+                    "tree tree";
+}
+
+#left{
+    grid-area: left;
+}
+
+#right{
+    grid-area: right;
+}
+
+#tree{
+    grid-area: tree;
+}

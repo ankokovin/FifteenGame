@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifteen Game</title>
+    <link href="treant-js-master/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css">
+    <script src="treant-js-master/vendor/jquery.min.js"></script>
+    <script src="treant-js-master/vendor/jquery.mousewheel.js"></script>
+    <script src="treant-js-master/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <link rel="stylesheet" href="treant-js-master/Treant.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">    
+</head>
+<body>
+    <div id="main-container">
+
+        <div id="left">
+            <p>
+                Alpha <input id="alpha" type="number" value=0.7944691209814846>
+            </p>
+            <button onclick="StartOne()">Start one</button>
+        </div>
+        <div id="right">
+            <p>Count <input id="count" type="number" value=1></p>
+            <p>Init step <input id="step" type="number" value=0.5></p>
+            <p>Step multiplyer <input id="mult" type="number" value=0.5></p>
+            <button onclick="StartSearch()">Start search</button>
+        </div>
+        <div id="tree"></div>
+    </div>
+        <script src="priority-queue.js"></script>
+        <script src="treant-js-master/vendor/raphael.js"></script>
+    <script src="treant-js-master/Treant.js"></script>
+    <script src="game-node.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
